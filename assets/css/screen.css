@@ -294,7 +294,6 @@ div {
 
 .gh-subscribe {
     padding: 7.2rem 0;
-    margin: 12rem 0 8rem;
     background-color: var(--ghost-accent-color);
 }
 
@@ -786,7 +785,10 @@ div {
     transform: translateX(5px);
 }
 
-
+.home-entries {
+    margin-top: 3em;
+    max-width: 1000px;
+}
 
 
 @media (max-width: 700px) {

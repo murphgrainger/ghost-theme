@@ -25,6 +25,26 @@
                 <h5>What am I ideating? <span class="arrow">→</span></h5>
             </a>
         </div>
+        <section class="gh-section home-entries">
+            <h2 class="gh-section-title">Newest entries</h2>
+
+            {{#get "posts" limit="3"}}
+            <div class="gh-feed">
+                {{^is "paged"}}
+                {{#foreach posts from="1"}}
+                {{> loop}}
+                {{/foreach}}
+                {{else}}
+                {{#foreach posts}}
+                {{> loop}}
+                {{/foreach}}
+                {{/is}}
+            </div>
+
+            {{/get}}
+
+            <button class="gh-loadmore gh-btn">Load more entries</button>
+        </section>
 
     </div>
     </main>
